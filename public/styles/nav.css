@@ -1,0 +1,28 @@
+nav {
+  height: 120px;
+  width: 100vw;
+  background-color: #4056A1;
+  color: #FFFFFF;
+}
+
+nav > span {
+  position: relative;
+  font-family: 'Bungee', cursive;
+  margin: 1.5em;
+  top: 50px;
+}
+
+.newTweet {
+  position: relative;
+  top: 20px;
+  left: 1000px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+}
+
+.newTweet > i {
+  position: relative;
+  top: 30px;
+  right: 120px;
+  color: #e74c3c; 
+}
