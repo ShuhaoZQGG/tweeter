@@ -44,3 +44,8 @@
   border-style: hidden;
 }
 
+
+#counter {
+  color: black;
+  font-family: 'Bungee', cursive;
+}
