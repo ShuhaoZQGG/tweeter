@@ -17,7 +17,7 @@
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
+
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
@@ -61,15 +61,16 @@
     <main class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form action = "/tweets" method = "POST">
+        <form action = "/tweets" method = "POST" id = "newTweet-form">
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div class = "tweet-submit">
             <button class="btn btn-primary"type="submit" id = "tweet-button">Tweet</button>
             <output id = "counter" name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
-
+        
         <div class = "tweets-container" id = "tweets-container">
+          <!--- tweet-article template
           <article class = "tweets-article">
             <header>
               <div class = "avatar-name">
@@ -88,25 +89,7 @@
               </div>
             </footer>
           </article>
-
-          <article class = "tweets-article">
-            <header>
-              <div class = "avatar-name">
-              <img src = "images/beard_man.png">
-              <h6>Name</h6>
-              </div>
-              <h5>@Username</h5>
-            </header>
-            <p>goodbye world</p>
-            <footer class = "tweets-footer">
-              <p id = "tweet-time">8 days ago</p>
-              <div class = "interaction-buttons">
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-comment"></i>
-                <i class="fa fa-retweet" aria-hidden="true"></i>
-              </div>
-            </footer>
-          </article>
+          -->
         </div>
       </section>    
     </main>
