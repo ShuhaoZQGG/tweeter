@@ -52,7 +52,10 @@
   margin-bottom: 0px;
   border: none;
   border-bottom: 2px solid black;
+  max-width: 55vw;
+  word-wrap: break-word;
   width: 95%;
+  
 }
 
 .tweets-article > footer {

@@ -31,7 +31,7 @@ const data = [
 ]
 
 const createTweetElement = function(tweet_Data) {
- const tweet_article = `
+const  tweet_article = `
 <article class = "tweets-article">
   <header>
     <div class = "avatar-name">
@@ -60,6 +60,7 @@ const renderTweets = function(tweets_data) {
 
   for (const tweet of tweets_data) {
     const $tweet = createTweetElement(tweet);
+  
     $('#tweets-container').prepend($tweet);
   }
   return $('#tweets-container');
@@ -73,12 +74,11 @@ const renderTweets = function(tweets_data) {
       method: "GET",
       dataType: "json",
       success: (tweets) => {
-        console.log(tweets);
         renderTweets(tweets);
       },
 
       error: (err) => {
-        console.log(`there was an error ${err}`)
+        alert(`there was an error ${err}`)
       }
     });
   }
@@ -89,10 +89,20 @@ const renderTweets = function(tweets_data) {
   event.preventDefault();
 
   const serializeData = $(this).serialize();
-  
-  $.post("/tweets", serializeData, (res) =>{
-    loadTweets();
-  })
+  if ($("#counter").val() === '140'){
+    alert ("Your tweet is empty");
+  } else if (Number($("#counter").val()) < 0) {
+    alert ("Your tweet exceeds the maximum length (140)");
+  } else {
+  $.post("/tweets", serializeData, (err, res) =>{
+    if (err) {
+      alert(`there was an error ${err}`)
+    } else {
+     loadTweets();
+    }
+    })
+  }
   })  
+
 });
 
