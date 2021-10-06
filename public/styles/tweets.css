@@ -1,6 +1,6 @@
 .tweets-container{
   position: relative;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .tweets-article {
@@ -55,7 +55,7 @@
 }
 
 .tweets-article > footer {
-  margin-top: -10px;
+  margin-top: 0px;
   margin-left: 10px;
   display: flex;
   flex-direction: row;
@@ -73,6 +73,7 @@
 
 .interaction-buttons > i {
   margin-left: 15px;
+  color: #60a3bc;
 }
 
 #tweet-time {
