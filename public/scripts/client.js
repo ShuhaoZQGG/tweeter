@@ -30,6 +30,12 @@ const data = [
   }
 ]
 
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 const createTweetElement = function(tweet_Data) {
 const  tweet_article = `
 <article class = "tweets-article">
@@ -40,7 +46,7 @@ const  tweet_article = `
     </div>
     <h5>${tweet_Data.user.handle}</h5>
   </header>
-  <p>${tweet_Data.content.text}</p>
+  <p>${escape(tweet_Data.content.text)}</p>
   <footer class = "tweets-footer">
     <p id = "tweet-time">${timeago.format(tweet_Data.created_at)}</p>
     <div class = "interaction-buttons">
@@ -94,14 +100,14 @@ const renderTweets = function(tweets_data) {
   } else if (Number($("#counter").val()) < 0) {
     alert ("Your tweet exceeds the maximum length (140)");
   } else {
-  $.post("/tweets", serializeData, (err, res) =>{
-    if (err) {
-      alert(`there was an error ${err}`)
-    } else {
-     loadTweets();
+     $.post("/tweets", serializeData, (err, res) =>{
+      if (err) {
+        alert(`there was an error ${err}`)
+      } else {
+       loadTweets();
+      }
+      })
     }
-    })
-  }
   })  
 
 });
