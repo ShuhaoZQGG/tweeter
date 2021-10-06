@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/newTweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -37,7 +38,7 @@
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <header>
+    <header class = "header">
     <nav>
       <span>tweeter app project</span>
       <div class = "newTweet">
@@ -65,6 +66,27 @@
             <output id = "counter" name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
+
+        <div class = "tweets-container">
+          <article class = "tweets-article">
+            <header>
+              <div class = "avatar-name">
+              <img src = "images/beard_man.png">
+              <h6>Name</h6>
+              </div>
+              <h5>@Username</h5>
+            </header>
+            <p>hello world</p>
+            <footer>
+              <p id = "tweet-time">10 days ago</p>
+              <div class = "interaction-buttons">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-comment"></i>
+                <i class="fa fa-retweet" aria-hidden="true"></i>
+              </div>
+            </footer>
+          </article>
+        </div>
       </section>    
     </main>
   </body>
