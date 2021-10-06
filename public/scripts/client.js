@@ -28,7 +28,7 @@ const createTweetElement = function(tweet_Data) {
   </header>
   <p>${tweet_Data.content.text}</p>
   <footer class = "tweets-footer">
-    <p id = "tweet-time">${tweet_Data.created_at}</p>
+    <p id = "tweet-time">${timeago.format(tweet_Data.created_at)}</p>
     <div class = "interaction-buttons">
       <i class="fas fa-heart"></i>
       <i class="fas fa-comment"></i>
