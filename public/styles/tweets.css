@@ -47,7 +47,7 @@
 }
 
 .tweets-article > p {
-  margin-top: 30px;
+  margin-top: 0px;
   margin-left: 2.5%;
   margin-bottom: 0px;
   border: none;
@@ -57,6 +57,7 @@
 
 .tweets-article > footer {
   margin-top: 0px;
+  margin-bottom: 10px;
   margin-left: 10px;
   display: flex;
   flex-direction: row;
