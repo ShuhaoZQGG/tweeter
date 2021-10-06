@@ -50,3 +50,11 @@
   color: black;
   font-family: 'Bungee', cursive;
 }
+
+.err-msg  {
+  display: none;
+  color: red;
+  border-style: solid;
+  border-radius: 3px;
+  border-width: 3px;
+}

@@ -96,14 +96,22 @@ const renderTweets = function(tweets_data) {
 
   const serializeData = $(this).serialize();
   if ($("#counter").val() === '140'){
-    alert ("Your tweet is empty");
+    $(".err-msg").slideDown(400, function(){
+      $(this).text("Your tweet is empty!")
+             .css("display", "inline");
+    });
   } else if (Number($("#counter").val()) < 0) {
-    alert ("Your tweet exceeds the maximum length (140)");
+    $(".err-msg").slideDown("slow", function(){
+      $(this).text("Your tweet exceeds 140 characters!")
+             .css("display", "inline");
+    });
   } else {
      $.post("/tweets", serializeData, (err, res) =>{
       if (err) {
         alert(`there was an error ${err}`)
       } else {
+       $(".err-msg").empty();
+       $(".err-msg").css("display", "none")
        loadTweets();
       }
       })
