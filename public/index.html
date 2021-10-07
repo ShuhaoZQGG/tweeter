@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/newTweet.css" type="text/css" />
     <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/footer.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -36,6 +37,8 @@
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous"
     />  
+    <link rel="stylesheet" href="font-awesome-animation.min.css">
+
 
   </head>
 
@@ -43,7 +46,7 @@
     <!-- Top nav bar (fixed) -->
     <header class = "header">
     <nav>
-      <span>tweeter app project</span>
+      <span id = "logo">tweeter app project</span>
       <div class = "newTweet">
       <span id = "newTweet">
         <b>Write</b> a new tweet
@@ -94,5 +97,9 @@
         </div>
       </section>    
     </main>
+    <footer>
+      <button id="up-button"><i class="fas fa-angle-double-up"></i>
+      </button>
+    </footer>
   </body>
 </html>

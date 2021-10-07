@@ -1,11 +1,17 @@
 nav {
   position: fixed;
+  visibility: visible;
   top: 0px;
   height: 120px;
   width: 100vw;
   background-color: #4056A1;
   color: #FFFFFF;
   z-index: 1;
+}
+
+#logo {
+  visibility: visible !important;
+  z-index: 2;
 }
 
 nav > span {
