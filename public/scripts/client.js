@@ -112,6 +112,8 @@ const renderTweets = function(tweets_data) {
       } else {
        $(".err-msg").empty();
        $(".err-msg").css("display", "none")
+       $("#tweet-text").val('');
+       $("#counter").val('140');
        loadTweets();
       }
       })
