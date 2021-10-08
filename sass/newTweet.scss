@@ -17,6 +17,7 @@ $hand-on-hover: pointer;
 }
 
 .new-tweet > form {
+  visibility: visible;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

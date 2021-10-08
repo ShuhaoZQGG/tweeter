@@ -9,6 +9,7 @@ $(document).ready(function(){
     count ++;
 
     if (count % 2 === 1) {
+      $('#newTweet-form').css("visibility","visible")
       $('html, body').animate({
         scrollTop: $("#tweet-text").offset().top - 190
         }, 1000);
@@ -17,6 +18,7 @@ $(document).ready(function(){
       $('#tweet-text').focus(); 
       $("#up-button").css("display", "none");
     } else {
+      $('#newTweet-form').css("visibility","hidden")
       $('html, body').animate({
         scrollTop: $(".tweets-container").offset().top - 110
         }, 1000);
