@@ -1,0 +1,94 @@
+$color-tweets: #2f3542;
+$color-border: black;
+$color-handle: #b2bec3;
+$color-shadow: #60a3bc;
+
+.tweets-container{
+  position: relative;
+  margin-top: 50px;
+}
+
+.tweets-article {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  color: $color-tweets;
+  border-color: $color-border;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  width: 55vw;
+  min-height: 25vh;
+  margin-bottom: 50px;
+}
+
+.tweets-article > header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.avatar-name {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.avatar-name > img {
+  margin-left: 20px;
+  max-width: 80px;
+  max-height: 70px;
+}
+
+.avatar-name > h6 {
+  margin-left: 20px;
+}
+
+.tweets-article > header > h5 {
+  color: $color-handle;
+  margin-right: 20px;
+}
+
+.tweets-article > p {
+  margin-top: 20px;
+  margin-left: 2.5%;
+  margin-bottom: 0px;
+  border: none;
+  border-bottom: 2px solid $color-border;
+  max-width: 55vw;
+  word-wrap: break-word;
+  width: 95%;
+  
+}
+
+.tweets-article > footer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.interaction-buttons {
+  margin-top: 20px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+
+.interaction-buttons > i {
+  margin-left: 15px;
+  color: $color-shadow;
+}
+
+#tweet-time {
+  margin-left: 20px;
+  font-weight: 300;
+  font-family: 'Birthstone', cursive;
+  font-size: 20px;
+}

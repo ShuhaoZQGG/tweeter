@@ -1,4 +1,4 @@
-.header{
+.header {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -6,11 +6,9 @@
   align-items: center;
   height: 450px;
   background-color: #FFC312;
-  background-image: url('/images/foggy-birds.png');
+  background-image: url("/images/foggy-birds.png");
 }
 
 .image {
   margin-top: 155px;
 }
-
-

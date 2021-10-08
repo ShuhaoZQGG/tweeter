@@ -3,17 +3,17 @@
   height: 100px;
   display: none;
   position: fixed;
-  bottom:50px;
+  bottom: 50px;
   right: 50px;
   border: none;
   border-radius: 60%;
-  background-color: red;
+  background-color: #eb2f06;
   padding: 20px;
   justify-content: center;
   align-items: center;
 }
 
-.fa-angle-double-up{
+.fa-angle-double-up {
   font-size: 35px;
-  color: white;
+  color: #f1f2f6;
 }

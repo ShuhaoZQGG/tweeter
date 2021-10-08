@@ -38,7 +38,7 @@ $(document).ready(function(){
   */
 
 $(window).scroll(function() {
-  if($(window).scrollTop() > $(document).height() * 0.04) {
+  if($(window).scrollTop() > $(document).height() * 0.2) {
     $("#up-button").css("display", "inline-flex");
     $("nav").css("visibility", "hidden");
   }

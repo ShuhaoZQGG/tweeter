@@ -1,0 +1,18 @@
+$color-header: #FFC312;
+
+.header{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  background-color: $color-header;
+  background-image: url('/images/foggy-birds.png');
+}
+
+.image {
+  margin-top: 155px;
+}
+
+

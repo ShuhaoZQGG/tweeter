@@ -3,12 +3,12 @@
 }
 
 .new-tweet {
-    margin-top: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .new-tweet > form {
@@ -20,7 +20,7 @@
 
 #tweet-text {
   outline: none;
-  resize: none; 
+  resize: none;
   background-color: #f4f1ec;
   border: none;
   border-bottom: 2px solid black;
@@ -38,22 +38,21 @@
 }
 
 #tweet-button {
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
   background-color: #54a0ff;
   color: #f4f1ec;
   border-radius: 5px;
   border-style: hidden;
 }
 
-
 #counter {
   color: black;
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
 }
 
-.err-msg  {
+.err-msg {
   display: none;
-  color: red;
+  color: #ff6b81;
   border-style: solid;
   border-radius: 3px;
   border-width: 3px;

@@ -19,14 +19,14 @@ nav {
 
 nav > span {
   position: relative;
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
   margin: 1.5em;
   z-index: 1;
 }
 
 .newTweet {
   margin: 1.5em;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 30px;
 }
 
@@ -34,5 +34,5 @@ nav > span {
   position: absolute;
   top: 90px;
   right: 120px;
-  color: #e74c3c; 
+  color: #e74c3c;
 }

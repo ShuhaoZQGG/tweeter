@@ -1,0 +1,40 @@
+$color-nav: #4056A1;
+$color-symbol: #e74c3c;
+nav {
+  position: fixed !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  visibility: visible;
+  top: 0px;
+  height: 120px;
+  width: 100% !important;
+  background-color: $color-nav;
+  color: #FFFFFF;
+  z-index: 1;
+}
+
+#logo {
+  visibility: visible !important;
+  z-index: 2;
+}
+
+nav > span {
+  position: relative;
+  font-family: 'Bungee', cursive;
+  margin: 1.5em;
+  z-index: 1;
+}
+
+.newTweet {
+  margin: 1.5em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+}
+
+.newTweet > i {
+  position: absolute;
+  top: 90px;
+  right: 120px;
+  color: $color-symbol; 
+}

@@ -1,12 +1,12 @@
-.tweets-container{
+.tweets-container {
   position: relative;
   margin-top: 50px;
 }
 
 .tweets-article {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
-  color: black;
+  color: #2f3542;
   border-color: black;
   border-radius: 5px;
   border-style: solid;
@@ -55,7 +55,6 @@
   max-width: 55vw;
   word-wrap: break-word;
   width: 95%;
-  
 }
 
 .tweets-article > footer {
@@ -84,6 +83,6 @@
 #tweet-time {
   margin-left: 20px;
   font-weight: 300;
-  font-family: 'Birthstone', cursive;
+  font-family: "Birthstone", cursive;
   font-size: 20px;
 }
