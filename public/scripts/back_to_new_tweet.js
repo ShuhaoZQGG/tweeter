@@ -21,25 +21,34 @@ $(document).ready(function(){
 
   $(".newTweet").on("mouseover hover",function(){
     $(".fa-angle-double-down").animate({
-      top: "40px"
+      top: "90px"
     });
     $(".fa-angle-double-down").animate({
-      top: "30px"
+      top: "80px"
     });
   })
 
+  /*
   $(window).bind('mousewheel', function(event) {
     if (event.originalEvent.wheelDelta < 0) {
       $("#up-button").css("display", "inline-flex");
       $("nav").css("visibility", "hidden");
     }
+  });
+  */
+
+$(window).scroll(function() {
+  if($(window).scrollTop() > $(document).height() * 0.04) {
+    $("#up-button").css("display", "inline-flex");
+    $("nav").css("visibility", "hidden");
+  }
 });
 
+
   $("#up-button").on("click", function(){
-    $('html, body').animate({
-      scrollTop: $(".header").offset().top - 190
-      }, 1000);
     $(this).css("display", "none");
     $("nav").css("visibility", "visible");
+    $("html").get(0).scrollIntoView();
+
   })
 })

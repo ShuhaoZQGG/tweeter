@@ -1,0 +1,208 @@
+@media (max-width: 459px) {
+  nav {
+    background-color: #FFC312;
+  }
+  
+  #logo {
+    font-size: 15px;
+  }
+
+  #tweet-text {
+    font-size: 15px;
+    width: 15rem;
+  }
+
+  #tweet-button {
+    font-size: 15px;
+    margin-left: 12rem;
+  }
+
+  #counter {
+    font-size: 15px;
+    margin-right: 12rem;
+  }
+
+  #newTweet {
+    position: absolute;
+    visibility: hidden;
+    font-size: 20px;
+    white-space: nowrap;
+    top: 40px;
+    right: -80px;
+  }
+  #newTweet :after{
+    visibility: visible;
+    content: "new Tweet";
+  }
+  #name {
+    font-size: 20px;
+  }
+
+  .newTweet > i {
+    font-size: 15px;
+    right: 60px;
+    top: 70px
+  }
+
+  #up-button {
+    width: 75px;
+    height: 75px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 460px) and (max-width: 689px) {
+  
+  nav {
+    background-color: #FFC312;
+  }
+  
+  .newTweet{
+    margin-top: 15px;
+  }
+
+  #tweet-text {
+    width: 25rem;
+  }
+
+  #tweet-button {
+    margin-left: 8rem;
+  }
+
+  #counter {
+    margin-right: 8rem;
+  }
+
+  #up-button {
+    width: 85px;
+    height: 85px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 690px) and (max-width: 767px) {
+  nav {
+    background-color: #FFC312;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1001px) {
+  .header {
+    background-color: red;
+  }
+
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: space-around;
+  }
+
+  nav {
+    left: 0px;
+  }
+
+  .header {
+    margin-top: 18rem;
+    left: 5rem;
+    height: 350px;
+    width: 30vw;
+  }
+
+  #tweet-text {
+    width: 25rem;
+  }
+
+  #tweet-button {
+    margin-left: 8rem;
+  }
+
+  #counter {
+    margin-right: 8rem;
+  }
+
+  .container {
+    margin-right: 2rem;
+    margin-top: 200px;
+  }
+
+  .image {
+    max-height: 225px;
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 1002px) and (max-width: 1135px){
+  .header {
+    background-color: red;
+  }
+
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: space-around;
+  }
+
+  nav {
+    left: 0px;
+  }
+
+  .header {
+    margin-top: 18rem;
+    margin-left: 20rem;
+    height: 350px;
+    width: 30vw;
+  }
+
+  #tweet-text {
+    width: 40rem;
+  }
+
+  .container {
+    margin-right: 16rem;
+    margin-top: 200px;
+  }
+
+  .image {
+    max-height: 225px;
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 1136px){
+  .header {
+    background-color: red;
+  }
+
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: space-around;
+  }
+
+  #counter {
+    margin-right: 0rem;
+  }
+
+  nav {
+    left: 0px;
+  }
+
+  .header {
+    margin-top: 18rem;
+    margin-left: 2rem;
+    height: 350px;
+    width: 30vw;
+  }
+
+  .container {
+    margin-top: 200px;
+  }
+
+  .image {
+    max-height: 225px;
+    margin-top: 60px;
+  }
+}
