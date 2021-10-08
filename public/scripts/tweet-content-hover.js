@@ -12,7 +12,7 @@ $(document).ready(function() {
     tweets_footer.css("box-shadow", "none");
   });
 
-  // The following codes handle the color change when user hovers on the buttons
+  // The following codes handle the color change when user hovers the buttons
   $(".fa-heart").on("mouseenter", function() {
     $(this).css("color","#fad390");
   });
