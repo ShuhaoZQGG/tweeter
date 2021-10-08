@@ -1,5 +1,6 @@
 $button-color: #eb2f06;
 $symbol-color: #f1f2f6;
+$hand-on-hover: pointer;
 
 #up-button {
   width: 100px;
@@ -14,6 +15,7 @@ $symbol-color: #f1f2f6;
   padding: 20px;
   justify-content: center;
   align-items: center;
+  cursor: $hand-on-hover;
 }
 
 .fa-angle-double-up {

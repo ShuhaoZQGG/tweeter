@@ -1,6 +1,7 @@
 $color-symple: #f4f1ec;
 $color-fancy: #54a0ff;
 $color-danger: #ff6b81;
+$hand-on-hover: pointer;
 
 .container {
   display: flex;
@@ -47,6 +48,7 @@ $color-danger: #ff6b81;
   color: $color-symple;
   border-radius: 5px;
   border-style: hidden;
+  cursor: $hand-on-hover;
 }
 
 

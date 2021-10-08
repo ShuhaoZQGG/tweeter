@@ -2,6 +2,7 @@ $color-tweets: #2f3542;
 $color-border: black;
 $color-handle: #b2bec3;
 $color-shadow: #60a3bc;
+$hand-on-hover: pointer;
 
 .tweets-container{
   position: relative;
@@ -79,6 +80,7 @@ $color-shadow: #60a3bc;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-end;
+  cursor: $hand-on-hover;
 }
 
 .interaction-buttons > i {

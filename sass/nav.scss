@@ -1,5 +1,6 @@
 $color-nav: #4056A1;
 $color-symbol: #e74c3c;
+$hand-on-hover: pointer;
 nav {
   position: fixed !important;
   display: flex;
@@ -30,6 +31,7 @@ nav > span {
   margin: 1.5em;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 30px;
+  cursor: $hand-on-hover;
 }
 
 .newTweet > i {
@@ -37,4 +39,5 @@ nav > span {
   top: 90px;
   right: 120px;
   color: $color-symbol; 
+  cursor: $hand-on-hover;
 }

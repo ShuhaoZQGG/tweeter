@@ -43,6 +43,7 @@
   color: #f4f1ec;
   border-radius: 5px;
   border-style: hidden;
+  cursor: pointer;
 }
 
 #counter {

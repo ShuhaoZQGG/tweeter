@@ -28,6 +28,7 @@ nav > span {
   margin: 1.5em;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 30px;
+  cursor: pointer;
 }
 
 .newTweet > i {
@@ -35,4 +36,5 @@ nav > span {
   top: 90px;
   right: 120px;
   color: #e74c3c;
+  cursor: pointer;
 }

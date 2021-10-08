@@ -73,6 +73,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-end;
+  cursor: pointer;
 }
 
 .interaction-buttons > i {
