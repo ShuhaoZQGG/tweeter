@@ -139,6 +139,7 @@ $(document).ready(function() {
     });
   };
 
+  loadTweets();
   // submit form event to post a new tweet
   const $form = $("#newTweet-form");
 
